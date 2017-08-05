@@ -85,8 +85,10 @@ export class ContentComponent {
         previousSetNumber = 0;
       }
       let prevSetQuestionLength = this.questionDataSet[previousSetNumber+1].Questions.length;
-      previousQuestionNumber = this.questionDataSet[previousSetNumber+1].Questions[prevSetQuestionLength-1]
+      previousQuestionNumber = prevSetQuestionLength-1;
     }
+    console.log(previousSetNumber);
+    console.log(previousQuestionNumber);
     this.prevHref = "#/question/set="+previousSetNumber+"&qsn="+previousQuestionNumber;    
   }
 
