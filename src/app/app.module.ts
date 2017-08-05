@@ -11,6 +11,7 @@ import { ContentComponent } from './components/content/content.component';
 
 import {AjaxService} from './services/ajax.service';
 
+import { StarRatingModule } from 'angular-star-rating';
 @NgModule({
   declarations: [
     //AppComponent,
@@ -20,7 +21,8 @@ import {AjaxService} from './services/ajax.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    StarRatingModule.forRoot()
   ],
   providers: [
     AjaxService
