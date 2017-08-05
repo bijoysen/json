@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+//import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
-  selector: 'home',
-  templateUrl: './home.template.html',
-  styleUrls: ['./home.style.css']
+  selector: 'content',
+  templateUrl: './content.template.html',
+  styleUrls: ['./content.style.css']
 })
-export class HomeComponent {
-
+export class ContentComponent {
+  constructor() {
+    // router.events.subscribe((val) => {
+    //     // see also 
+    //     console.log(val instanceof NavigationEnd) 
+    // });
+  }
 }
