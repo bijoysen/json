@@ -1,7 +1,7 @@
-<div *ngFor="let chunk of model.data;let i = index;">
+<div data-type="set" *ngFor="let chunk of model.data;let i = index;">
     <label>{{chunk.name}}</label>
     <ul>
-        <li *ngFor="let question of chunk.Questions;let j = index;">
+        <li data-type="question" *ngFor="let question of chunk.Questions;let j = index;">
             <a href="#/question/set={{i}}&qsn={{j}}" [innerHTML]="question.text"></a>
             <!-- <br>
             <span>{{question.explainertext}}</span> -->
