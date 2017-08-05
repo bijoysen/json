@@ -1,0 +1,10 @@
+<div *ngFor="let chunk of model.data">
+    <label>{{chunk.name}}</label>
+    <ul>
+        <li *ngFor="let question of chunk.Questions">
+            <a href="#">{{question.text}}</a>
+            <br>
+            <span>{{question.explainertext}}</span>
+        </li>
+    </ul>
+</div>
